@@ -13,17 +13,6 @@ def sum2numbers(num1,num2):
     summ = num1 + num2
     return summ
 
-def welcom_user(name):
-    """Greet the user.
-
-    Args:
-        name (str): Name of the user.
-
-    Returns:
-        str: greeting message.
-    """
-    greeting = f"Hello, {name}!"
-    return greeting
 
 def split_string_by_comma(input_string):
     """Split a string into a list using commas as separators.
