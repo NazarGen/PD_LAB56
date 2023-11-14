@@ -13,4 +13,7 @@ class Test(unittest.TestCase):
 
     def test_function3(self):
         result = write_to_file("file.txt","Helow Nazar")  # Замените на ваши реальные аргументы
-        self.assertTrue(result)
+        with open("file.txt", 'r') as file:
+            read_content = file.read()
+
+        self.assertEqual(read_content, "Helow Nazar")
